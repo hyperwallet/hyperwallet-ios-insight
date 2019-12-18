@@ -1,0 +1,28 @@
+{
+    "actor": {
+        "tracking_visit_id": "1234",
+        "tracking_visitor_id": "12345"
+    },
+    "channel": "mobile",
+    "event_params": [
+        {
+            "sdk_version": "1",
+            "e": "im",
+            "sw": 414,
+            "t": 1573170644681,
+            "osv": "12.1",
+            "os": "iOS",
+            "sh": 896,
+            "dvmdl": "iPhone",
+            "pgtf": "Swift",
+            "dvid": "iPhone XR",
+            "hyperwallet_environment": "DEV",
+            "device_orientation": "portrait",
+            "rsta": "en",
+            "comp": "hyperwallet",
+            "hyperwallet_is": "1234",
+            "product": "hyperwallet-ios-ui-sdk",
+            "dvis": "Mobile Phone"
+        }
+    ]
+}
