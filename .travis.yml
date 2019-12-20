@@ -46,4 +46,4 @@ script: |
   # Lint - Add `--strict` to fail for warning and violation
   swiftlint lint --reporter json
 
-after_success: slather
+# after_success: slather
