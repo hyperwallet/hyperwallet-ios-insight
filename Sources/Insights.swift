@@ -107,7 +107,7 @@ public final class Insights: InsightsProtocol {
         visitId = UUID().uuidString
     }
 
-    /// Clearing Insights instance.
+    /// Clears Insights instance.
     public static func clearInstance() {
         if let httpClient = instance?.httpClient {
              httpClient.invalidateSession()
