@@ -107,8 +107,13 @@ public final class Insights: InsightsProtocol {
         visitId = UUID().uuidString
     }
 
-    deinit {
+    /// Clearing Insights instance.
+    public static func clearInstance() {
+        if let httpClient = instance?.httpClient {
+             httpClient.invalidateSession()
+        }
         removeObserversForTrackingLifecycleEvents()
+        instance = nil
     }
 
     /// Set up the shared instance of the Insights framework
@@ -131,13 +136,15 @@ public final class Insights: InsightsProtocol {
                              sdkVersion: String,
                              apiUrl: String,
                              userToken: String) {
-        instance = Insights(environment: environment,
-                            programToken: programToken,
-                            sdkVersion: sdkVersion,
-                            apiUrl: apiUrl,
-                            userToken: userToken)
+        if instance == nil {
+            instance = Insights(environment: environment,
+                                programToken: programToken,
+                                sdkVersion: sdkVersion,
+                                apiUrl: apiUrl,
+                                userToken: userToken)
 
-        instance?.addObserversForTrackingLifecycleEvents()
+            addObserversForTrackingLifecycleEvents()
+        }
     }
 
     public func trackClick(pageName: String, pageGroup: String, link: String, params: [String: String]) {
@@ -168,7 +175,7 @@ public final class Insights: InsightsProtocol {
         }
     }
 
-    private func addObserversForTrackingLifecycleEvents() {
+    private static func addObserversForTrackingLifecycleEvents() {
         let application = UIApplication.shared
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didEnterBackground(_:)),
@@ -180,7 +187,7 @@ public final class Insights: InsightsProtocol {
                                                object: application)
     }
 
-    private func removeObserversForTrackingLifecycleEvents() {
+    private static func removeObserversForTrackingLifecycleEvents() {
         let application = UIApplication.shared
         NotificationCenter.default.removeObserver(self,
                                                   name: UIApplication.didEnterBackgroundNotification,
