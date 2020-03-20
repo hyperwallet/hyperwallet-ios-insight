@@ -111,7 +111,7 @@ public final class Insights: InsightsProtocol {
         if let httpClient = instance?.httpClient {
             httpClient.invalidateSession()
         }
-        removeObserversForTrackingLifecycleEvents()
+        instance?.removeObserversForTrackingLifecycleEvents()
         instance = nil
     }
 
@@ -142,7 +142,7 @@ public final class Insights: InsightsProtocol {
                                 apiUrl: apiUrl,
                                 userToken: userToken)
 
-            addObserversForTrackingLifecycleEvents()
+            instance?.addObserversForTrackingLifecycleEvents()
         }
     }
 
@@ -174,7 +174,7 @@ public final class Insights: InsightsProtocol {
         }
     }
 
-    private static func addObserversForTrackingLifecycleEvents() {
+    private func addObserversForTrackingLifecycleEvents() {
         let application = UIApplication.shared
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didEnterBackground(_:)),
@@ -186,7 +186,7 @@ public final class Insights: InsightsProtocol {
                                                object: application)
     }
 
-    private static func removeObserversForTrackingLifecycleEvents() {
+    private func removeObserversForTrackingLifecycleEvents() {
         let application = UIApplication.shared
         NotificationCenter.default.removeObserver(self,
                                                   name: UIApplication.didEnterBackgroundNotification,
