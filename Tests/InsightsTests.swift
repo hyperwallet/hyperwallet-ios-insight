@@ -13,7 +13,6 @@ final class InsightsTests: XCTestCase {
     override func setUp() {
         super.setUp()
         EventManager.shared.deleteEvents(before: Date().epochMilliseconds())
-        Insights.clearInstance()
         Insights.setup(environment: environment,
                        programToken: programToken,
                        sdkVersion: sdkVersion,
