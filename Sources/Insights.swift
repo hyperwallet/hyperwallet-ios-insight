@@ -106,6 +106,7 @@ public final class Insights: InsightsProtocol {
         self.userToken = userToken
         visitId = UUID().uuidString
     }
+
     /// Clears Insights instance.
     public static func clearInstance() {
         if let httpClient = instance?.httpClient {
