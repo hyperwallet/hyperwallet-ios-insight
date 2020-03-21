@@ -137,6 +137,17 @@ final class InsightsTests: XCTestCase {
         XCTAssertEqual(countAfterSave, 15, "There should be 15 Click events in the storage")
     }
 
+    func testClearInstance() {
+        Insights.setup(environment: environment,
+                       programToken: programToken,
+                       sdkVersion: sdkVersion,
+                       apiUrl: InsightsTestHelper.restURL,
+                       userToken: userToken)
+        XCTAssertNotNil(Insights.shared, "Insight instance should not equal to nil")
+        Insights.clearInstance()
+        XCTAssertNil(Insights.shared, "Insight instance should equal to nil")
+    }
+    
     private func setEventRequest(_ payload: Data, _ error: NSError? = nil) -> StubRequest {
         let response = InsightsTestHelper.setUpMockedResponse(payload: payload, error: error)
         let baseUrl = InsightsTestHelper.restURL
