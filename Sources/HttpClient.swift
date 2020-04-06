@@ -25,6 +25,10 @@ struct HttpClient {
         self.session = HttpClient.createUrlSession()
     }
 
+    func invalidateSession() {
+        session.invalidateAndCancel()
+    }
+
     func post(with url: String, httpBody: Data, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         if let url = URL(string: url) {
             var request = URLRequest(url: url)

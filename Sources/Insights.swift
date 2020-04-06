@@ -107,8 +107,13 @@ public final class Insights: InsightsProtocol {
         visitId = UUID().uuidString
     }
 
-    deinit {
-        removeObserversForTrackingLifecycleEvents()
+    /// Clears Insights instance.
+    public static func clearInstance() {
+        if let httpClient = instance?.httpClient {
+            httpClient.invalidateSession()
+        }
+        instance?.removeObserversForTrackingLifecycleEvents()
+        instance = nil
     }
 
     /// Set up the shared instance of the Insights framework
@@ -131,13 +136,15 @@ public final class Insights: InsightsProtocol {
                              sdkVersion: String,
                              apiUrl: String,
                              userToken: String) {
-        instance = Insights(environment: environment,
-                            programToken: programToken,
-                            sdkVersion: sdkVersion,
-                            apiUrl: apiUrl,
-                            userToken: userToken)
+        if instance == nil {
+            instance = Insights(environment: environment,
+                                programToken: programToken,
+                                sdkVersion: sdkVersion,
+                                apiUrl: apiUrl,
+                                userToken: userToken)
 
-        instance?.addObserversForTrackingLifecycleEvents()
+            instance?.addObserversForTrackingLifecycleEvents()
+        }
     }
 
     public func trackClick(pageName: String, pageGroup: String, link: String, params: [String: String]) {
