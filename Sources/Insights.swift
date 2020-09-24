@@ -93,7 +93,7 @@ public final class Insights: InsightsProtocol {
 
     /// A shared singleton property is an instance of Insights framework
     public static var shared: Insights? {
-        return instance
+        instance
     }
 
     private lazy var httpClient = HttpClient()

@@ -33,11 +33,11 @@ struct DeviceInfo {
         return deviceModel
     }()
 
-    var deviceScreenHeight: CGFloat { return UIScreen.main.bounds.height }
-    var deviceScreenWidth: CGFloat { return UIScreen.main.bounds.width }
-    var deviceType: String { return UIDevice.current.userInterfaceIdiom.description }
-    var orientation: String { return UIDevice.current.orientation.description }
-    var languageCode: String { return Locale.preferredLanguages[0] }
+    var deviceScreenHeight: CGFloat { UIScreen.main.bounds.height }
+    var deviceScreenWidth: CGFloat { UIScreen.main.bounds.width }
+    var deviceType: String { UIDevice.current.userInterfaceIdiom.description }
+    var orientation: String { UIDevice.current.orientation.description }
+    var languageCode: String { Locale.preferredLanguages[0] }
 
     static var shared = DeviceInfo()
 

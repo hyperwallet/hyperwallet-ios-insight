@@ -20,6 +20,6 @@ import Foundation
 
 extension Date {
     func epochMilliseconds() -> Int64 {
-        return Int64(self.timeIntervalSince1970 * 1000)
+        Int64(self.timeIntervalSince1970 * 1000)
     }
 }
