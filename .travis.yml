@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode11.1
+osx_image: xcode12.2
 os: osx
 branches:
  only:
@@ -15,7 +15,7 @@ env:
   - IOS_FRAMEWORK_SCHEME="Insights"
 
   matrix:
-    - ios_version='13.1'  ios_device='iPhone 11' scheme="$IOS_FRAMEWORK_SCHEME"  platform='iOS Simulator'
+    - ios_version='14.2'  ios_device='iPhone 11' scheme="$IOS_FRAMEWORK_SCHEME"  platform='iOS Simulator'
 before_install:
   # Boot the emulator by ID
   - |
@@ -24,13 +24,12 @@ before_install:
   # List all emulator available
   - xcrun simctl list
   # Update the brew and build dependencies tools
-  - brew outdated carthage || brew upgrade carthage
-  - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
+  - brew update && brew upgrade carthage
+  - carthage version
+  - carthage update --platform ios --use-xcframeworks --no-use-binaries --cache-builds
   - gem i slather
   # Force to update the Swiftlint to the last stable version
   - brew outdated swiftlint || brew upgrade swiftlint
-  # Print the booted emulator
-  - xcrun simctl list | grep "(Booted)"
   # Print the swiftlint version
   - swiftlint version
 script: |

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,13 +18,13 @@
 		4A6FDF7B2370781700275A41 /* InsightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FDF7A2370781700275A41 /* InsightsTests.swift */; };
 		4A6FDF802370B31200275A41 /* EventPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A6FDF7F2370B31200275A41 /* EventPayload.json */; };
 		4A6FDF8623715CD300275A41 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6FDF8523715CD300275A41 /* Date.swift */; };
-		4A7317CD23744B4A00F5D22F /* Hippolyte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7317CC23744B4A00F5D22F /* Hippolyte.framework */; };
 		4A7317CF2374518100F5D22F /* InsightsTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7317CE2374518100F5D22F /* InsightsTestHelper.swift */; };
 		4A88FF1B236898FD0025D985 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88FF1A236898FD0025D985 /* Events.swift */; };
 		4AD2EFC32372D6CE0080030D /* Insights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB32DA623513F84009F120E /* Insights.xcdatamodeld */; };
 		4ADE281323671B35000F0BEB /* Insights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE281223671B35000F0BEB /* Insights.swift */; };
 		9865B6B92375D81E00ED1EA1 /* SuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */; };
 		B3102892236C9CF2008C9757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3102891236C9CF2008C9757 /* HttpClient.swift */; };
+		FD44E8582628146500A31794 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD44E8572628146500A31794 /* Hippolyte.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +58,7 @@
 		4ADE281223671B35000F0BEB /* Insights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insights.swift; sourceTree = "<group>"; };
 		9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessResponse.json; sourceTree = "<group>"; };
 		B3102891236C9CF2008C9757 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		FD44E8572628146500A31794 /* Hippolyte.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Hippolyte.xcframework; path = Carthage/Build/Hippolyte.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7317CD23744B4A00F5D22F /* Hippolyte.framework in Frameworks */,
 				2EB32DEA23579E47009F120E /* Insights.framework in Frameworks */,
+				FD44E8582628146500A31794 /* Hippolyte.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +141,7 @@
 		2EB32DE923579E47009F120E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD44E8572628146500A31794 /* Hippolyte.xcframework */,
 				4A7317CC23744B4A00F5D22F /* Hippolyte.framework */,
 			);
 			name = Frameworks;
