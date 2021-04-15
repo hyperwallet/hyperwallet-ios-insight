@@ -5,7 +5,7 @@ extension Event {
     /// Request to fetch events
     @nonobjc
     public class func fetchRequest() -> NSFetchRequest<Event> {
-        return NSFetchRequest<Event>(entityName: "Event")
+        NSFetchRequest<Event>(entityName: "Event")
     }
 
     /// Created date in milliseconds
