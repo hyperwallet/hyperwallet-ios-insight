@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11B7FF93282B47EF005522A7 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; };
-		11B7FF94282B47EF005522A7 /* Hippolyte.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EB32D7B23513979009F120E /* Insights.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB32D6D23513979009F120E /* Insights.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EB32DA823513F84009F120E /* Insights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB32DA623513F84009F120E /* Insights.xcdatamodeld */; };
 		2EB32DEA23579E47009F120E /* Insights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB32D6A23513979009F120E /* Insights.framework */; };
@@ -38,20 +36,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		11B7FF95282B47EF005522A7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11B7FF94282B47EF005522A7 /* Hippolyte.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Hippolyte.xcframework; path = Carthage/Build/Hippolyte.xcframework; sourceTree = "<group>"; };
 		2EB32D6A23513979009F120E /* Insights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Insights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B7FF93282B47EF005522A7 /* Hippolyte.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +191,6 @@
 				2EB32D6723513979009F120E /* Frameworks */,
 				2EB32D6823513979009F120E /* Resources */,
 				4A72C78C2369BC8500FC7A7E /* SwiftLint */,
-				11B7FF95282B47EF005522A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -480,7 +462,6 @@
 		2EB32D7F23513979009F120E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -512,7 +493,6 @@
 		2EB32D8023513979009F120E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
