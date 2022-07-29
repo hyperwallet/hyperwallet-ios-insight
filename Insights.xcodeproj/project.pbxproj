@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		4ADE281323671B35000F0BEB /* Insights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE281223671B35000F0BEB /* Insights.swift */; };
 		9865B6B92375D81E00ED1EA1 /* SuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */; };
 		B3102892236C9CF2008C9757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3102891236C9CF2008C9757 /* HttpClient.swift */; };
+		DB9A10292893F16600592727 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9A10292893F16600592727 /* Hippolyte.xcframework in Frameworks */,
 				2EB32DEA23579E47009F120E /* Insights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +464,7 @@
 		2EB32D7F23513979009F120E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -493,6 +496,7 @@
 		2EB32D8023513979009F120E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -524,7 +528,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86FDS64Z83;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -548,7 +554,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86FDS64Z83;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
