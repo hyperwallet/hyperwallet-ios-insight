@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		4ADE281323671B35000F0BEB /* Insights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE281223671B35000F0BEB /* Insights.swift */; };
 		9865B6B92375D81E00ED1EA1 /* SuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */; };
 		B3102892236C9CF2008C9757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3102891236C9CF2008C9757 /* HttpClient.swift */; };
+		DBB5EEEA29D37E7F002A0A70 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB5EEEA29D37E7F002A0A70 /* Hippolyte.xcframework in Frameworks */,
 				2EB32DEA23579E47009F120E /* Insights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +192,6 @@
 				2EB32D6623513979009F120E /* Sources */,
 				2EB32D6723513979009F120E /* Frameworks */,
 				2EB32D6823513979009F120E /* Resources */,
-				4A72C78C2369BC8500FC7A7E /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -274,27 +275,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4A72C78C2369BC8500FC7A7E /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -x\nif [ -z \"$CI\" ]; then\n    if ! which swiftlint > /dev/null; then\n        echo \"warning: SwiftLint is not installed. To install run `brew install SwiftLint`\"\n    else\n        swiftlint autocorrect\n        swiftlint\n    fi\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EB32D6623513979009F120E /* Sources */ = {
