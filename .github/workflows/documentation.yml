@@ -23,8 +23,8 @@ jobs:
             --min-acl public \
             --no-hide-documentation-coverage \
             --theme fullwidth \
-            --title HyperwalletSDK \
-            --module HyperwalletSDK \
+            --title Insights \
+            --module Insights \
             --output ./docs \
             --documentation=./*.md
 
