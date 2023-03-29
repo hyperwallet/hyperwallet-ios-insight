@@ -48,7 +48,7 @@ final class InsightsTests: XCTestCase {
                                     pageGroup: pageGroup,
                                     link: link,
                                     params: [:])
-        sleep(10)
+        sleep(4)
 
         let events = EventManager.shared.loadEvents(before: Date().epochMilliseconds())
         XCTAssertEqual(events.count, 1, "There should be 1 record in database")
@@ -67,7 +67,7 @@ final class InsightsTests: XCTestCase {
                                              params: [:])
         }
 
-        sleep(10)
+        sleep(4)
 
         let events = EventManager.shared.loadEvents(before: Date().epochMilliseconds())
         XCTAssertEqual(events.count, 2, "There should be 2 Impression events in the storage")
@@ -90,7 +90,7 @@ final class InsightsTests: XCTestCase {
                                         errorInfo: errorInfo)
         }
 
-        sleep(10)
+        sleep(4)
 
         let events = EventManager.shared.loadEvents(before: Date().epochMilliseconds())
         XCTAssertEqual(events.count, 3, "There should be 3 Error events in the storage")
@@ -107,7 +107,7 @@ final class InsightsTests: XCTestCase {
                                         link: "test_link",
                                         params: [:])
         }
-        sleep(10)
+        sleep(4)
 
         let countAfterSave = EventManager.shared.getEventsCount()
         XCTAssertEqual(countAfterSave, 5, "There should be 5 Click events in the storage")
@@ -127,11 +127,11 @@ final class InsightsTests: XCTestCase {
                                         params: [:])
             if eventNumber == 10 {
                 // wait 1 second to separate other events (createdOn)
-                sleep(10)
+                sleep(4)
             }
         }
 
-        sleep(10)
+        sleep(4)
 
         let countAfterSave = EventManager.shared.getEventsCount()
         XCTAssertEqual(countAfterSave, 15, "There should be 15 Click events in the storage")

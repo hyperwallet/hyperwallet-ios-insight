@@ -1,0 +1,15 @@
+author: Hyperwallet Systems Inc
+clean: true
+author_url: https://www.hyperwallet.com/
+github_url: https://github.com/hyperwallet/hyperwallet-ios-sdk
+copyright: Copyright (c) 2018-present, Hyperwallet Systems Inc. All rights reserved.
+module: Insights
+module_version: 0.0.1
+hide_documentation_coverage: true
+podspec: Insights.podspec
+readme: README.md
+skip_undocumented: true
+source_directory: Sources
+theme: fullwidth
+use_safe_filenames: true
+output: docs
