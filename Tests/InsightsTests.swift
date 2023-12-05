@@ -163,7 +163,7 @@ final class InsightsTests: XCTestCase {
         XCTAssertEqual(events[0].actor.trackingVisitorId, userToken, "TrackingVisitorId should be as expected")
         XCTAssertEqual(events[0].channel, "mobile", "Channel should not be nil")
         XCTAssertEqual(events[0].eventParams.count, 1, "EventParams count should be 1")
-        XCTAssertEqual(events[0].eventParams[0].component, "hyperwallet", "Component should be as expected")
+        XCTAssertEqual(events[0].eventParams[0].component, "hwiosuisdk", "Component should be as expected")
         XCTAssertNotNil(events[0].eventParams[0].deviceModel, "Device Model should not be nil")
         XCTAssertNotNil(events[0].eventParams[0].deviceName, "Device Name should not be nil")
         XCTAssertNotNil(events[0].eventParams[0].deviceType, "Device Type should not be nil")
@@ -175,7 +175,7 @@ final class InsightsTests: XCTestCase {
         XCTAssertNotNil(events[0].eventParams[0].orientation, "Orientation should not be nil")
         XCTAssertNotNil(events[0].eventParams[0].rosettaLanguage, "Language should not be nil")
         XCTAssertEqual(events[0].eventParams[0].hyperwalletIs, programToken, "IS should be as expected")
-        XCTAssertEqual(events[0].eventParams[0].product, "hyperwallet-ios-ui-sdk", "Product should be as expected")
+        XCTAssertEqual(events[0].eventParams[0].product, "dropin", "Product should be as expected")
         XCTAssertEqual(events[0].eventParams[0].pageName, pageName, "PageName should be as expected")
         XCTAssertEqual(events[0].eventParams[0].pageGroup, pageGroup, "Page Group should be as expected")
         if let link = link {
