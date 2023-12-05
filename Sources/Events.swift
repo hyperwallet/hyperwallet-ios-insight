@@ -71,6 +71,7 @@ struct EventParams: Codable {
     var screenHeight: CGFloat?
     var screenWidth: CGFloat?
     var sdkVersion: String?
+    var tenentName: String?
     var timestamp: Int64?
     var transferMethodType: String?
 
@@ -103,6 +104,7 @@ struct EventParams: Codable {
         case screenHeight = "sh"
         case screenWidth = "sw"
         case sdkVersion = "sdk_version"
+        case tenentName = "tenent_name"
         case timestamp = "t"
         case transferMethodType = "hyperwallet_ea_type"
     }
@@ -113,9 +115,10 @@ struct EventConstants {
     static let click = "cl"
     static let error = "err"
     static let errorTypeForm = "FORM"
-    static let hyperwalletComponent = "hyperwallet"
+    static let hyperwalletComponent = "hwiosuisdk"
     static let impression = "im"
     static let operatingSystem = "iOS"
-    static let product = "hyperwallet-ios-ui-sdk"
+    static let product = "dropin"
+    static let tenentName = "hyperwallet"
     static let swiftFramework = "Swift"
 }

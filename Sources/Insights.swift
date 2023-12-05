@@ -222,7 +222,9 @@ public final class Insights: InsightsProtocol {
         eventParams.hyperwalletIs = programToken
         eventParams.operatingSystem = EventConstants.operatingSystem
         eventParams.pageTechnologyFlag = EventConstants.swiftFramework
-        eventParams.product = EventConstants.product
+        eventParams.tenentName = eventParams.tenentName ?? EventConstants.tenentName
+        eventParams.component = eventParams.component ?? EventConstants.hyperwalletComponent
+        eventParams.product = eventParams.product ?? EventConstants.product
         eventParams.sdkVersion = sdkVersion
         eventParams.timestamp = Date().epochMilliseconds()
     }
