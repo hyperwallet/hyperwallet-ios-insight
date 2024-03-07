@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		4ADE281323671B35000F0BEB /* Insights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE281223671B35000F0BEB /* Insights.swift */; };
 		9865B6B92375D81E00ED1EA1 /* SuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */; };
 		B3102892236C9CF2008C9757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3102891236C9CF2008C9757 /* HttpClient.swift */; };
+		B43DE7122B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */; };
 		DBB5EEEA29D37E7F002A0A70 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		4ADE281223671B35000F0BEB /* Insights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insights.swift; sourceTree = "<group>"; };
 		9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessResponse.json; sourceTree = "<group>"; };
 		B3102891236C9CF2008C9757 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		2EB32D6023513979009F120E = {
 			isa = PBXGroup;
 			children = (
+				B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */,
 				2EB32D6C23513979009F120E /* Sources */,
 				2EB32D7723513979009F120E /* Tests */,
 				2EB32D6B23513979009F120E /* Products */,
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43DE7122B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
