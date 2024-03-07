@@ -16,8 +16,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: macos-12
-            xcode_version: 14.2
+          - os: macos-13
+            xcode_version: 15.2
             fastlane_task: unit_tests
 
     runs-on: ${{ matrix.os }}
@@ -45,7 +45,7 @@ jobs:
           --no-use-binaries
 
       - name: Run ${{ matrix.task_title }}
-        run: fastlane ${{ matrix.fastlane_task }}
+        run: fastlane ${{ matrix.fastlane_task }} disable-concurrent-testing:"true"
 
       - name: Lint validation
         run:
