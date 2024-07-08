@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                  = 'Insights'
-    spec.version               = '1.0.0-beta07'
+    spec.version               = '1.0.0-beta09'
     spec.summary               = 'Insights SDK for iOS Hyperwallet UI SDK to capture the events'
     spec.homepage              = 'https://github.com/hyperwallet/hyperwallet-ios-insight'
     spec.license               = { :type => 'MIT', :file => 'LICENSE' }

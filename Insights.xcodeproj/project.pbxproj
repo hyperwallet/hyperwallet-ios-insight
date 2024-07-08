@@ -25,6 +25,7 @@
 		9865B6B92375D81E00ED1EA1 /* SuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */; };
 		B3102892236C9CF2008C9757 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3102891236C9CF2008C9757 /* HttpClient.swift */; };
 		B43DE7122B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */; };
+		DB69EF992C3CA5B0001A6752 /* Insights.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DB69EF982C3CA5B0001A6752 /* Insights.podspec */; };
 		DBB5EEEA29D37E7F002A0A70 /* Hippolyte.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FF92282B47EF005522A7 /* Hippolyte.xcframework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		9865B6B82375D81E00ED1EA1 /* SuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessResponse.json; sourceTree = "<group>"; };
 		B3102891236C9CF2008C9757 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DB69EF982C3CA5B0001A6752 /* Insights.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Insights.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		2EB32D6023513979009F120E = {
 			isa = PBXGroup;
 			children = (
+				DB69EF982C3CA5B0001A6752 /* Insights.podspec */,
 				B43DE7112B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy */,
 				2EB32D6C23513979009F120E /* Sources */,
 				2EB32D7723513979009F120E /* Tests */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43DE7122B8FF2DB00ED86E6 /* PrivacyInfo.xcprivacy in Resources */,
+				DB69EF992C3CA5B0001A6752 /* Insights.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
