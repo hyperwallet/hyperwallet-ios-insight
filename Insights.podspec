@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                  = 'Insights'
-    spec.version               = '1.0.0-beta09'
+    spec.version               = '1.0.0-beta08'
     spec.summary               = 'Insights SDK for iOS Hyperwallet UI SDK to capture the events'
     spec.homepage              = 'https://github.com/hyperwallet/hyperwallet-ios-insight'
     spec.license               = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,4 +12,5 @@ Pod::Spec.new do |spec|
     spec.requires_arc          = true
     spec.swift_version         = '5.0'
     spec.resources             = 'Sources/**/Insights.xcdatamodeld'
+    spec.resource_bundles      = { 'Insights' => ['PrivacyInfo.xcprivacy'] }
 end
