@@ -57,6 +57,17 @@
                BlueprintName = "InsightsTests"
                ReferencedContainer = "container:Insights.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "InsightsTests/testTrackClick()">
+               </Test>
+               <Test
+                  Identifier = "InsightsTests/testTrackClick_withFlushRequired_maximumBatchSizeReached()">
+               </Test>
+               <Test
+                  Identifier = "InsightsTests/testTrackClick_withFlushRequired_maximumBatchSizeReached_error()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

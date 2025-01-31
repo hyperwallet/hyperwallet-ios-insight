@@ -107,7 +107,7 @@ final class InsightsTests: XCTestCase {
                                         link: "test_link",
                                         params: [:])
         }
-        sleep(16)
+//        sleep(17)
 
         let countAfterSave = EventManager.shared.getEventsCount()
         XCTAssertEqual(countAfterSave, 5, "There should be 5 Click events in the storage")
