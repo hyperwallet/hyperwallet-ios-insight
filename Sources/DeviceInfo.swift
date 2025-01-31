@@ -52,12 +52,16 @@ extension UIUserInterfaceIdiom {
         switch self {
         case .phone:
             return "Mobile Phone"
+
         case .pad:
             return "Tablet"
+
         case .tv:
             return "TV"
+
         case .carPlay:
             return "CarPlay"
+
         default:
             return "Unknown"
         }
@@ -69,16 +73,22 @@ extension UIDeviceOrientation {
         switch self {
         case .portrait:
             return "portrait"
+
         case .portraitUpsideDown:
             return "portraitUpsideDown"
+
         case .landscapeLeft:
             return "landscapeLeft"
+
         case .landscapeRight:
             return "landscapeRight"
+
         case .faceUp:
             return "faceUp"
+
         case .faceDown:
             return "faceDown"
+
         default:
             return "unknown"
         }
