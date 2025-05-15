@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/hyperwallet-ios-insight/hyperwallet-ios-insight/Sources/CoreData/Event+CoreDataClass.swift",
+      "line": 4,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/hyperwallet-ios-insight/hyperwallet-ios-insight/Sources/CoreData/Event+CoreDataClass.swift",
+      "line": 5,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/hyperwallet-ios-insight/hyperwallet-ios-insight/Sources"
+}
